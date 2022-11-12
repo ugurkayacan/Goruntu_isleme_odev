@@ -1,3 +1,4 @@
 # Goruntu_isleme_odev
 
-Kullanılan resimler bu yapıda mevcuttur.
+Kullanılan ve son ürün resimler bu yapıda mevcuttur.
+Bazı teknik ve son ürün eşleştirmelerinde karışıklık olabilir.
