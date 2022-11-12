@@ -23,7 +23,7 @@ K_X=[[-1,0,1],
      [-1,0,1]]
 
 
-for i in range(345):
+for i in range(345):#out of index hatası verdiğinden dolayı satır ve sütun değerlerinde değişikliğe gidildi.
     for j in range(535):
         for z in range(3):
             for k in range(3):
