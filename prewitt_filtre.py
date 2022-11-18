@@ -3,16 +3,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 foto=cv2.imread("agac.jpg",0)
-#open cv ile
 
-kernelx=np.array([[-1,0,1],[-1,0,1],[-1,0,1]])
-kernely=np.array([[1,1,1],[0,0,0],[-1,-1,-1]])
 
-img_prewitx=cv2.filter2D(foto,-1,kernelx)
-img_prewity=cv2.filter2D(foto,-1,kernely)
-img_prewit=img_prewity+img_prewitx
-
-#for döngüsü kullanarak:
 
 prewit_x=np.zeros((350,545)) #0 matrisler oluşturuldu
 prewit_y=np.zeros((350,545))
@@ -58,7 +50,6 @@ prewit=prewit_y+prewit_x
 
 cv2.imshow("foto",foto)
 cv2.waitKey(0)
-cv2.imshow("prewit_foto_opencv",img_prewit)
-cv2.waitKey(0)
+
 cv2.imshow("prewit_foto_for",prewit)
 cv2.waitKey(0)
