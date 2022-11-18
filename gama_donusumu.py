@@ -7,7 +7,7 @@ import math
 foto=cv2.imread("agac.jpg")
 
 c=1
-gamma=4 #3,4,5
+gamma=4 #3,4,5 
 def donusum(foto):
     s=foto.astype(float)
     s-=np.min(s)
