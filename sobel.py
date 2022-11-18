@@ -7,11 +7,9 @@ foto=cv2.imread("agac.jpg",0)
 
 
 
-sobelx = cv2.Sobel(foto,cv2.CV_8U,1,0,ksize=5)  # x
-sobely = cv2.Sobel(foto,cv2.CV_8U,0,1,ksize=5)
-img_sobel=sobely+sobelx
 
-#FOR DONGUSU İLE
+
+
 
 #X
 
@@ -57,14 +55,9 @@ sobel=sobel_y+sobel_x
 
 cv2.imshow("foto",foto)
 cv2.waitKey(0)
-cv2.imshow("sobel_foto_opencv",img_sobel)
-cv2.waitKey(0)
+
 cv2.imshow("sobel_foto_for",sobel)
 
-"""""
-sobel*=-1
-yan_yana=np.hstack((foto,img_sobel,sobel))
-plt.imshow(yan_yana)
-plt.show()
-"""
+
+
 cv2.waitKey(0)
